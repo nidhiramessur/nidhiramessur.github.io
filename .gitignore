@@ -1,0 +1,39 @@
+# IntelliJ IDEA
+.idea/
+
+# Compiled files
+*.class
+*.jar
+
+# Log files
+*.log
+
+# OS-specific files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/datasources.xml
+.idea/dataSources.ids
+.idea/sqlDataSources.xml
+.idea/libraries
+
+# User-specific files
+.idea/caches/
+.idea/codeStyles/
+.idea/codeInspection/
+.idea/inspectionProfiles/
+.idea/shelf/
+.idea/externalLibraries/
+
+# Metadata files
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/uiDesigner.xml
+*.iml
+*.ipr
+*.iws
+
+# Gradle files
+.gradle/
+build/
+
