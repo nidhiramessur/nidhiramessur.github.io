@@ -1,1 +1,4 @@
-theme: jekyll-theme-phantom
+theme: jekyll-theme-minimal
+
+plugins:
+  - jekyll-include-cache
