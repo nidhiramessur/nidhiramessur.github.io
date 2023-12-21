@@ -1,41 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Nidhi - Personal Website</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/mediaqueries.css">
+        <title>Nidhi - Personal Website</title>
+    </head>
 
-<body>
+    <body>
+        <nav id="desktop-app">
+            <div class="logo">Nidhi Ramessur</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Nidhi Ramessur</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section-pic-container">
+                <img src="assets/profile-picture.jpg" alt="Nidhi Ramessur profile picture"/>
+            </div>
+            <div class="section_text">
+                <p class="section_text_p1">Hello I'm</p>
+                <h1 class="title">Nidhi Ramessur</h1>
+                <p class="section_text_p2">Software Developer</p>
+                <div class="btn-container">
+                    <button class="btn btb-color-2" onclick="window.open('./assets/ResumeNidhiRamessur.pdf')">
+                        Download Resume
+                    </button>
+                    <button class="btn btb-color-1" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img
+                        src="assets/linkedin-logo.png"
+                        alt="My LinkedIn Profile"
+                        class="clickable-icon"
+                        onclick="location.href='https://www.linkedin.com/in/nidhi-ramessur/'"
+                    />
+                    <img
+                        src="./assets/github-logo.png"
+                        alt="My Github Profile"
+                        class="clickable-icon"
+                        onclick="location.href='https://github.com/nidhiramessur'"
+                    />
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section_text_p1">Get to Know More</p>
+            <p class="title">About Me</p>
+            <div class="section-container">
+                <div class="about-section-pic-container">
+                    <img
+                        src="./assets/about-pic.jpg"
+                        alt="Profile Picture"
+                        class="about-pic"
+                    />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-container">
+                        <div class="details-container">
+                            <img
+                                src="./assets/briefcase.png"
+                                alt="Experience icon"
+                                class="fixed-icon"
+                            />
+                            <h3> Experience</h3>
+                            <p> 2 years of Internship Experience in Software Engineering, Software Development and DevOps </p>
+                        </div>
+                        <div class="details-container">
+                            <img
+                                src="./assets/education.png"
+                                alt="Education icon"
+                                class="fixed-icon"
+                            />
+                            <h3>Education</h3>
+                            <p> Bachelor of Computer Science <br/> University of Waterloo <br/> Dec 2023</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            Hey there! 👋🏼 I'm a soon-to-be Computer Science graduate from the University of Waterloo,
+                            passionate about creating user-friendly software! ✨
+                            <br/>
+                            My journey in tech has been shaped by problem-solving courses, hands-on projects and
+                            internships in various industries. I have developed proficiency in C++, Java, Python,
+                            Kotlin, and many more over the past 5 years. 🚀
+                            <br/>
+                            Beyond coding, I love exploring how things work. I'm intrigued by psychology, medicine, and
+                            the complexities of the human brain! I'm also into painting, styling, reading, and outdoor
+                            activities like camping, hiking, and skiing. 🌍❤️
+                            <br/>
+                            I'm on a journey to continually improve my skills and would love to connect with you for
+                            networking, collaborations, or just friendly discussions! 😊
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/down-arrow.png" alt="Arrow icon" class="icon-arrow"
+            onclick="location.href='./experience'">
+        </section>
+        <script src="script.js"> </script>
 
-    <header>
-        <h1>Nidhi Ramessur</h1>
-        <p>Welcome to My Personal Website</p>
-    </header>
-
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>hi. i'm nidi</p>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <!-- Add your portfolio items here -->
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Contact information goes here.</p>
-    </section>
-
-</body>
+    </body>
 
 </html>
