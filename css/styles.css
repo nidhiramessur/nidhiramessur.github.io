@@ -350,21 +350,24 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    overflow-x: auto; /* Enable horizontal scrolling */
 }
 
 .article-container {
+    overflow-y: auto; /* Enable vertical scrolling */
     display: flex;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
+    max-height: 20rem;
     justify-content: space-around;
 }
 
 article {
     display: flex;
     width: 10rem;
-    justify-content: space-around;
+    justify-content: left;
     gap: 0.5rem;
 }
 
@@ -385,8 +388,8 @@ article.icon {
 
 .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 55%;
+    height: 100%;
 }
 
 .project-title {
